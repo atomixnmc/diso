@@ -7,9 +7,9 @@ The `build-windows-wheels.yml` workflow automatically builds Windows AMD64 wheel
 ### Features
 
 - **Platform**: Windows (AMD64 architecture)
-- **Python Versions**: 3.8, 3.9, 3.10, 3.11
+- **Python Versions**: 3.10, 3.11
 - **CUDA Versions**: 11.8, 12.1
-- **Total Builds**: 8 wheel variants (4 Python versions × 2 CUDA versions)
+- **Total Builds**: 4 wheel variants (2 Python versions × 2 CUDA versions)
 
 ### Trigger Events
 
@@ -46,7 +46,7 @@ diso-windows-amd64-py{python_version}-cuda{cuda_version}-wheel
 ```
 
 Examples:
-- `diso-windows-amd64-py3.8-cuda11.8-wheel`
+- `diso-windows-amd64-py3.10-cuda11.8-wheel`
 - `diso-windows-amd64-py3.11-cuda12.1-wheel`
 
 Artifacts are retained for 30 days.
